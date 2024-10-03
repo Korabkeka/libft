@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kkeka <kkeka@student.42.fr>                +#+  +:+       +#+        */
+/*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 10:57:08 by kkeka             #+#    #+#             */
 /*   Updated: 2024/10/01 11:00:07 by kkeka            ###   ########.fr       */

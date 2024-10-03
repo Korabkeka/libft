@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kkeka <kkeka@student.42.fr>                +#+  +:+       +#+        */
+/*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 10:33:20 by kkeka             #+#    #+#             */
 /*   Updated: 2024/10/01 10:34:17 by kkeka            ###   ########.fr       */
