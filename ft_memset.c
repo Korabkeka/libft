@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
+/*   By: kkeka <kkeka@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 11:22:08 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/01 12:42:02 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/04 11:30:41 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,19 @@
 
 void    *ft_memset(void *b, int c, size_t len)
 {
-    size_t  i;
     unsigned char   *ptr;
 
-    ptr = b;
-    i = -1;
-    while (++i < len)
-        *ptr++ = (unsigned char)c;
+    ptr = (unsigned char *)b;
+    while (len > 0)
+    {
+        *(ptr++) = (unsigned char)c;
+        len--;
+    }
     return (b);
 }
-/*
-int main(void)
+
+/*int main(void)
 {
     char hello[10] = "bon"; 
-    printf("%s\n", memset((void *)hello, 97, 3));
+    printf("%s\n", (char *)memset(hello, 97, 3));
 }*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
+/*   By: kkeka <kkeka@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 13:31:30 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/01 13:47:52 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/04 11:24:55 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,29 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t	i;
 	char *ptr;
 
-	i = -1;
-	ptr = s;
-	while (++i < n)
-		*ptr++ = 0;	
+	ptr = (char *)s;
+	while (n > 0)
+	{
+		*(ptr++) = 0;
+		n--;
+	}
 }
-/*
-int main(void)
+
+/*int main(void)
 {
 	char hello[10] = "hello";
+	int i = 0;
 
-	ft_bzero((void *)hello, 5);
-	printf("%i\n", (int)hello[0]);
+	ft_bzero(hello, 4);
+	while (i < 10)
+	{
+		if (hello[i] == 0)
+			printf("empty\n");
+		else
+			printf("%c\n", hello[i]);
+		i++;
+	}
+	printf("%s\n", hello);
 }*/

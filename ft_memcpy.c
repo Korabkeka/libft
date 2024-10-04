@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
+/*   By: kkeka <kkeka@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 13:52:26 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/02 11:21:47 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/04 11:38:24 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,18 @@
 
 void    *ft_memcpy(void *dst, const void *src, size_t n)
 {
-    size_t  i;
-    char    *ptr;
+    unsigned char    *pdst;
+    unsigned char    *psrc;
 
-    ptr = dst;
-    i = -1;
-    while (++i < n)
-        *ptr++ = *(char*)src++;
+    if(dst == (void *)0 && src == (void *)0)
+        return (dst);
+    pdst = (unsigned char *)dst;
+    psrc = (unsigned char *)src;
+    while (n > 0)
+    {
+        *(pdst++) = *(psrc++);
+        n--;
+    }
     return (dst);
 }
 
@@ -28,5 +33,5 @@ void    *ft_memcpy(void *dst, const void *src, size_t n)
 {
     char hello[10] = "bonrobert";
     char bobo[10] = "lolo";
-    printf("%s\n", ft_memcpy((void *)hello, (const void *)bobo, 4));
+    printf("%s\n", (char *)ft_memcpy(hello, bobo, 4));
 }*/
