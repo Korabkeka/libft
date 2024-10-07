@@ -1,37 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/04 14:06:01 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/07 13:50:20 by kkeka            ###   ########.fr       */
+/*   Created: 2024/10/07 13:48:27 by kkeka             #+#    #+#             */
+/*   Updated: 2024/10/07 14:08:14 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-char    *ft_strchr(const char *s, int c)
+char    *ft_strrchr(const char *s, int c)
 {
 	int		i;
 	char	_c;
+    char *last;
 
 	_c = (char)c;
 	i = 0;
+    last = NULL;
 	while(s[i])
 	{
 		if(s[i] == _c)
-			return ((char *)&(s[i]));
+			last = (char *)&(s[i]);
 		i++;
 	}
 	if (s[i] == _c)
-		return ((char *)&(s[i]));
-	return ((void *)0);
+		last = ((char *)&(s[i]));
+    return (last);
 }
 
 /*int	main(void)
 {
 	char s[] = "hello world";
-	printf("%c\n", (size_t)ft_strchr(s, 'u'));
+	printf("%s\n", ft_strrchr(s, 'o'));
 }*/

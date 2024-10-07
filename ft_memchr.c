@@ -1,37 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/04 14:06:01 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/07 13:50:20 by kkeka            ###   ########.fr       */
+/*   Created: 2024/10/07 14:21:48 by kkeka             #+#    #+#             */
+/*   Updated: 2024/10/07 14:42:24 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-char    *ft_strchr(const char *s, int c)
+void    *ft_memchr(const void *s, int c, size_t n)
 {
-	int		i;
-	char	_c;
+    size_t          i;
+    unsigned char   *ptr;
 
-	_c = (char)c;
-	i = 0;
-	while(s[i])
-	{
-		if(s[i] == _c)
-			return ((char *)&(s[i]));
-		i++;
-	}
-	if (s[i] == _c)
-		return ((char *)&(s[i]));
-	return ((void *)0);
+    i = 0;
+    ptr = (unsigned char *)s;
+    while (n--)
+    {
+        if ( ptr[i] == (unsigned char)c)
+            return ((void *)&ptr[i]);
+        i++;
+    }
+    return (NULL);
 }
 
-/*int	main(void)
+/*int main(void)
 {
-	char s[] = "hello world";
-	printf("%c\n", (size_t)ft_strchr(s, 'u'));
+    char s[] = "hello world";
+    printf("%s\n", ft_memchr(s, 'o', 8));
 }*/

@@ -1,37 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/04 14:06:01 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/07 13:50:20 by kkeka            ###   ########.fr       */
+/*   Created: 2024/10/07 14:11:34 by kkeka             #+#    #+#             */
+/*   Updated: 2024/10/07 14:19:06 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-char    *ft_strchr(const char *s, int c)
+int strncmp(const char *s1, const char *s2, size_t n)
 {
-	int		i;
-	char	_c;
+    size_t  i;
 
-	_c = (char)c;
-	i = 0;
-	while(s[i])
-	{
-		if(s[i] == _c)
-			return ((char *)&(s[i]));
-		i++;
-	}
-	if (s[i] == _c)
-		return ((char *)&(s[i]));
-	return ((void *)0);
+    i = 0;
+    while ((s1[i] && s2[i]) && i < n)
+    {
+        if ((unsigned char)s1[i] > (unsigned char)s2[i])
+            return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+        if ((unsigned char)s1[i] < (unsigned char)s2[i])
+            return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+        i++;
+    }
+    return (0);
 }
-
-/*int	main(void)
-{
-	char s[] = "hello world";
-	printf("%c\n", (size_t)ft_strchr(s, 'u'));
-}*/
