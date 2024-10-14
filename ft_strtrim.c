@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 15:23:10 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/10 20:01:24 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/14 11:36:16 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,8 @@ char *ft_strtrim(char const *s1, char const *set)
     while (s1[j] && found((char)s1[j], set))
         j--;
     len = j - i;
+    if (len <= 0)
+        return (strdup(""));
     str = (char *)malloc((len + 2) * sizeof(char));
     if(!str)
         return (NULL);
@@ -53,8 +55,8 @@ char *ft_strtrim(char const *s1, char const *set)
     str[k] = '\0';
     return (str);
 }
-
-/*int main(void)
+/*
+int main(void)
 {
-    printf("%s\n", ft_strtrim("aabababccbabhellobbabbbacccab", "abc"));
+    printf("%s\n", ft_strtrim("", "abc"));
 }*/
