@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kkeka <kkeka@student.42.fr>                +#+  +:+       +#+        */
+/*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 13:31:30 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/04 11:24:55 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 11:51:48 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 void	ft_bzero(void *s, size_t n)
 {
@@ -23,7 +21,6 @@ void	ft_bzero(void *s, size_t n)
 		n--;
 	}
 }
-
 /*int main(void)
 {
 	char hello[10] = "hello";

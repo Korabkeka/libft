@@ -6,14 +6,11 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 12:22:29 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/10 15:28:50 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 12:04:53 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-
-size_t  strlcat(char *dst, const char *src, size_t size)
+size_t  ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t  dlen;
 	size_t  slen;
@@ -33,7 +30,6 @@ size_t  strlcat(char *dst, const char *src, size_t size)
 	}
 	return (dlen + slen);
 }
-
 /*int main(void)
 {
 	char s1[15] = "hello ";

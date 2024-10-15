@@ -6,12 +6,9 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 13:11:02 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/04 13:56:42 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 12:14:09 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
-#include <ctype.h>
 
 static int	ft_islower(int c)
 {
@@ -24,7 +21,7 @@ int ft_toupper(int c)
 {
     int diff;
 
-    if (isalpha(c))
+    if (ft_isalpha(c))
     {
         diff = 'a' - 'A';
         if (ft_islower(c))
@@ -32,7 +29,6 @@ int ft_toupper(int c)
     }
 	return (c);
 }
-
 /*int main(void)
 {
 	printf("%c\n", ft_toupper('d'));

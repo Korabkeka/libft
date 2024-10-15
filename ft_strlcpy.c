@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kkeka <kkeka@student.42.fr>                +#+  +:+       +#+        */
+/*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 14:11:25 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/04 10:32:02 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 12:05:08 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 size_t  ft_strlcpy(char *dst, const char *src, size_t size)
 {
@@ -26,7 +24,6 @@ size_t  ft_strlcpy(char *dst, const char *src, size_t size)
 	}
 	return (slen);
 }
-
 /*int main()
 {
     char		dest[10];

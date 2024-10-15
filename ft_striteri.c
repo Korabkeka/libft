@@ -6,19 +6,16 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 19:39:22 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/14 19:48:30 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 12:02:38 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
-#include <string.h>
 
 void ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
     int i;
 
     i = 0;
-    while (i < strlen(s))
+    while (i < ft_strlen(s))
     {
         (*f)(i, &s[i]);
         i++;

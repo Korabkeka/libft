@@ -6,13 +6,11 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:06:01 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/07 13:50:20 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 12:00:57 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-char    *ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	int		i;
 	char	_c;
@@ -29,7 +27,6 @@ char    *ft_strchr(const char *s, int c)
 		return ((char *)&(s[i]));
 	return ((void *)0);
 }
-
 /*int	main(void)
 {
 	char s[] = "hello world";

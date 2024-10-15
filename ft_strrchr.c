@@ -6,11 +6,9 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 13:48:27 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/07 14:08:14 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 12:12:01 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 char    *ft_strrchr(const char *s, int c)
 {
@@ -31,7 +29,6 @@ char    *ft_strrchr(const char *s, int c)
 		last = ((char *)&(s[i]));
     return (last);
 }
-
 /*int	main(void)
 {
 	char s[] = "hello world";
