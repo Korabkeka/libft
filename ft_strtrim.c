@@ -6,9 +6,11 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 15:23:10 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 12:11:59 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 15:16:12 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 static int  found(char c, char const *set)
 {

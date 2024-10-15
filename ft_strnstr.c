@@ -6,9 +6,11 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 15:48:15 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 12:08:47 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 15:16:00 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 {

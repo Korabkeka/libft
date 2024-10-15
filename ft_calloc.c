@@ -6,12 +6,11 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 13:13:48 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 11:53:01 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 15:13:15 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 void    *ft_calloc(size_t nmemb, size_t size)
 {

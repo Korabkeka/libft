@@ -6,13 +6,11 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 12:00:10 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 11:54:10 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 15:13:58 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "libft.h"
 
 static int  calc_n_len(long n)
 {

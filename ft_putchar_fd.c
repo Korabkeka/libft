@@ -6,9 +6,11 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 19:57:59 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 11:57:53 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 15:14:30 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void ft_putchar_fd(char c, int fd)
 {

@@ -6,9 +6,11 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 14:11:25 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 12:05:08 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 15:15:26 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t  ft_strlcpy(char *dst, const char *src, size_t size)
 {

@@ -6,9 +6,11 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 20:14:20 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 11:59:56 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 15:14:55 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 static void countwords(char const *s, char c, int *counter)
 {

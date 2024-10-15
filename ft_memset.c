@@ -6,9 +6,11 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 11:22:08 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 11:56:40 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 15:14:26 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void    *ft_memset(void *b, int c, size_t len)
 {

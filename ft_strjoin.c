@@ -6,9 +6,11 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 15:08:44 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 12:04:11 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 15:15:15 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char    *ft_strjoin(const char *s1, const char *s2)
 {

@@ -6,9 +6,11 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:42:12 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 12:12:19 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 15:16:19 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char    *ft_substr(char const *s, unsigned int start, size_t len)
 {

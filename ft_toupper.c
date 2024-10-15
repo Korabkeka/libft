@@ -6,9 +6,11 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 13:11:02 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 12:14:09 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 15:16:31 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 static int	ft_islower(int c)
 {

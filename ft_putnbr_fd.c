@@ -6,9 +6,11 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 11:25:03 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 11:59:15 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 15:14:42 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void    ft_putnbr_fd(int n, int fd)
 {

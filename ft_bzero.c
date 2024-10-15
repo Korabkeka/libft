@@ -6,9 +6,11 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 13:31:30 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 11:51:48 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 15:13:04 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

@@ -6,9 +6,11 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:23:03 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 12:02:16 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 15:15:05 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char    *ft_strdup(const char *s)
 {

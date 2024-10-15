@@ -6,9 +6,11 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 13:52:26 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 11:55:53 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 15:14:15 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void    *ft_memcpy(void *dst, const void *src, size_t n)
 {

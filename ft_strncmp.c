@@ -6,11 +6,13 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 14:11:34 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 12:07:31 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 15:15:54 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	strncmp(const char *s1, const char *s2, size_t n)
+#include "libft.h"
+
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t  i;
 

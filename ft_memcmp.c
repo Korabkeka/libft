@@ -6,9 +6,11 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 14:43:17 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 11:55:03 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 15:14:09 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int ft_memcmp(const void *s1, const void *s2, size_t n)
 {

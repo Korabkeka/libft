@@ -6,9 +6,11 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 11:14:07 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 11:58:55 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 15:14:35 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_putendl_fd(char *s, int fd)
 {

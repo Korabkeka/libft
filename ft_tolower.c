@@ -6,9 +6,11 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:00:33 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 12:13:41 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 15:16:24 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 static int	ft_isupper(int c)
 {

@@ -6,9 +6,11 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 14:21:48 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 11:55:12 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 15:14:03 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void    *ft_memchr(const void *s, int c, size_t n)
 {

@@ -6,9 +6,11 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 10:46:16 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 11:56:07 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 15:14:21 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void    *ft_memmove(void *dest, const void *src, size_t n)
 {
