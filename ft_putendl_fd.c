@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 11:14:07 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 15:14:35 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 16:09:40 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,5 @@ void	ft_putendl_fd(char *s, int fd)
 		write(fd, &s[i], 1);
 		i++;
 	}
-	write(fd, '\n', 1);
+	write(fd, "\n", 1);
 }

@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 19:39:22 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 15:15:10 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 16:14:03 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-    int i;
+    size_t i;
 
     i = 0;
     while (i < ft_strlen(s))

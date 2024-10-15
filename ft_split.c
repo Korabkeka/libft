@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 20:14:20 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 15:14:55 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/15 16:12:21 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ static char *saveword(char const *s, char c, int *current)
 	return (str);
 }
 
-static void *free_all(char **strs, int count)
+static void free_all(char **strs, int count)
 {
 	while (count >= 0)
 	{
@@ -78,7 +78,10 @@ char **ft_split(char const *s, char c)
 	{
 		strarr[i] = saveword(s, c, &current_split_start);
 		if (!strarr[i])
-			return (free_all(strarr, i));
+		{
+			free_all(strarr, i);
+			return (NULL);
+		}
 		i++;
 	}    
 	strarr[i] = 0;
