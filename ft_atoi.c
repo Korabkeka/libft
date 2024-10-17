@@ -6,12 +6,11 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 11:42:49 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/17 10:15:46 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/17 11:44:28 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int	ft_atoi(const char *nptr)
 {
