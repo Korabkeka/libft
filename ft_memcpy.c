@@ -6,18 +6,18 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 13:52:26 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 15:14:15 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/17 10:39:12 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    *ft_memcpy(void *dst, const void *src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned char    *pdst;
-	unsigned char    *psrc;
+	unsigned char	*pdst;
+	unsigned char	*psrc;
 
-	if(dst == (void *)0 && src == (void *)0)
+	if (dst == (void *)0 && src == (void *)0)
 		return (dst);
 	pdst = (unsigned char *)dst;
 	psrc = (unsigned char *)src;

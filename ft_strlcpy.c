@@ -6,18 +6,18 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 14:11:25 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 15:15:26 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/17 11:00:20 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t  ft_strlcpy(char *dst, const char *src, size_t size)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-    size_t slen;
+	size_t	slen;
 
-    slen = ft_strlen(src);
-    if (size > slen + 1)
+	slen = ft_strlen(src);
+	if (size > slen + 1)
 		ft_memcpy(dst, src, slen + 1);
 	else if (size != 0)
 	{

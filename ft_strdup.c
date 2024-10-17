@@ -6,22 +6,22 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:23:03 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 15:15:05 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/17 10:54:50 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
-	size_t  i;
-	size_t  srclen;
-	char    *dup;
+	size_t	i;
+	size_t	srclen;
+	char	*dup;
 
 	i = 0;
 	srclen = ft_strlen(s);
 	dup = malloc(srclen + 1);
-	if(!dup)
+	if (!dup)
 		return (NULL);
 	while (s[i])
 	{

@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:06:01 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 15:14:59 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/17 10:54:01 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ char	*ft_strchr(const char *s, int c)
 
 	_c = (char)c;
 	i = 0;
-	while(s[i])
+	while (s[i])
 	{
-		if(s[i] == _c)
+		if (s[i] == _c)
 			return ((char *)&(s[i]));
 		i++;
 	}

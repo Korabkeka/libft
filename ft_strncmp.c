@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 14:11:34 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 15:15:54 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/17 11:07:05 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	size_t  i;
+	size_t	i;
 
 	i = 0;
 	while ((s1[i] && s2[i]) && i < n)

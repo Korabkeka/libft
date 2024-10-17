@@ -6,15 +6,15 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 11:22:08 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 15:14:26 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/17 10:44:57 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    *ft_memset(void *b, int c, size_t len)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	unsigned char   *ptr;
+	unsigned char	*ptr;
 
 	ptr = (unsigned char *)b;
 	while (len > 0)

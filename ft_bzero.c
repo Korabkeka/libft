@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 13:31:30 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 15:13:04 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/17 10:16:50 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	char *ptr;
+	char	*ptr;
 
 	ptr = (char *)s;
 	while (n > 0)

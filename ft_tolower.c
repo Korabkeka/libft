@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:00:33 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/15 15:16:24 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/17 11:13:15 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static int	ft_isupper(int c)
 
 int	ft_tolower(int c)
 {
-	int diff;
+	int	diff;
 
 	if (ft_isalpha(c))
 	{
