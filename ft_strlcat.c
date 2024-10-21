@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 12:22:29 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/17 10:59:12 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/18 19:02:23 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dlen = ft_strlen(dst);
 	slen = ft_strlen(src);
 	if (dlen >= size)
-		return (dlen + slen);
+		return (size + slen);
 	if (size - dlen > slen)
 	{
 		ft_memcpy(dst + dlen, src, slen + 1);

@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 14:43:17 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/17 10:38:21 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/20 10:43:23 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	i = 0;
 	str1 = (unsigned char *)s1;
 	str2 = (unsigned char *)s2;
-	if (n == 0)
-		return (0);
-	while ((i < n) && (str1[i] && str2[i]))
+	while (i < n)
 	{
 		if (str1[i] != str2[i])
 			return (str1[i] - str2[i]);
