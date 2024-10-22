@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 20:14:20 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/23 01:01:54 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/23 01:21:36 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,13 +48,13 @@ static char	*addword(const char *s, char c, int start_index)
 	size_t	i;
 
 	i = 0;
-	while (s[start_index + i] != c && start_index + i < strlen(s))
+	while (s[start_index + i] != c && start_index + i < ft_strlen(s))
 		i++;
 	res = malloc((i + 1) * sizeof(char));
 	if (!res)
 		return (NULL);
 	i = 0;
-	while (s[start_index + i] != c && start_index + i < strlen(s))
+	while (s[start_index + i] != c && start_index + i < ft_strlen(s))
 	{
 		res[i] = s[start_index + i];
 		i++;
