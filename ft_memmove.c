@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 10:46:16 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/18 18:39:02 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/23 01:11:07 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,11 +35,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*int main(void)
-{
-	char	s1[10] = "bonjour";
-	char	s2[10] = "helld";
-
-	ft_memmove((void *)s1, (void *)s2, 5);
-	printf("%s\n", s1);
-}*/

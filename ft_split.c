@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 20:14:20 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/20 19:32:53 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/23 01:01:54 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,20 +15,20 @@
 static int	countwords(char const *s, char c)
 {
 	int	i;
-	int count;
-	int currentlyinword;
+	int	count;
+	int	currentlyinword;
 
 	i = 0;
 	count = 0;
 	currentlyinword = 0;
 	while (s[i])
 	{
-		if(s[i] != c && !currentlyinword)
+		if (s[i] != c && !currentlyinword)
 		{
 			count++;
 			currentlyinword = 1;
 		}
-		if(s[i] == c)
+		if (s[i] == c)
 			currentlyinword = 0;
 		i++;
 	}
@@ -48,12 +48,13 @@ static char	*addword(const char *s, char c, int start_index)
 	size_t	i;
 
 	i = 0;
-	while (s[start_index + i] != c && start_index + i < ft_strlen(s))
+	while (s[start_index + i] != c && start_index + i < strlen(s))
 		i++;
 	res = malloc((i + 1) * sizeof(char));
 	if (!res)
 		return (NULL);
-	while (s[start_index + i] != c && start_index + i < ft_strlen(s))
+	i = 0;
+	while (s[start_index + i] != c && start_index + i < strlen(s))
 	{
 		res[i] = s[start_index + i];
 		i++;
@@ -79,37 +80,25 @@ char	**ft_split(char const *s, char c)
 	int		currentlyinword;
 	int		i;
 	int		j;
-	
+
 	init_vars(&i, &j, &currentlyinword);
 	res = malloc((countwords(s, c) + 1) * sizeof(char *));
 	if (!res)
 		return (NULL);
 	while (s[i])
 	{
-		if(s[i] != c && !currentlyinword)
+		if (s[i] != c && !currentlyinword)
 		{
 			res[j] = addword(s, c, i);
-			if(!res[j])
-				return(free_all(res, j));
+			if (!res[j])
+				return (free_all(res, j));
 			currentlyinword = 1;
 			j++;
 		}
-		if(s[i] == c)
+		if (s[i] == c)
 			currentlyinword = 0;
 		i++;
 	}
 	res[j] = NULL;
 	return (res);
 }
-/*
-#include <stdio.h>
-
-int main(void)
-{
-	char    **arr = ft_split("bonjour comment ca va ?", ' ');
-	int i = 0;
-	while(arr[i])
-		printf("%s\n", arr[i++]);
-	char s[] = "    ";
-	printf("%i\n", countwords(s, ' '));
-}*/

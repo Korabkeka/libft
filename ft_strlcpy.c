@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 14:11:25 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/17 11:00:20 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/23 01:04:47 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	}
 	return (slen);
 }
-/*int main()
-{
-    char		dest[10];
-	const char	src[6] = "hello";
-
-	ft_strlcpy(dest, src, 6);
-	printf("%s\n", dest);
-}*/

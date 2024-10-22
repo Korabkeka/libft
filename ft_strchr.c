@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:06:01 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/17 10:54:01 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/23 01:04:00 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)&(s[i]));
 	return ((void *)0);
 }
-/*int	main(void)
-{
-	char s[] = "hello world";
-	printf("%c\n", (size_t)ft_strchr(s, 'u'));
-}*/

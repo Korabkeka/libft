@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:42:12 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/17 11:12:45 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/23 01:02:12 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*sub;
 
 	i = 0;
+	if (!s)
+		return (NULL);
+	if (ft_strlen(s) < start)
+		return (ft_strdup(""));
 	while (s[i + start] && i < len)
 		i++;
 	sub = malloc(i + 1);
@@ -32,7 +36,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sub[i] = '\0';
 	return (sub);
 }
-/*int main(void)
-{
-	printf("%s\n", ft_substr("hello world", 8, 12));
-}*/

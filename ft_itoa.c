@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 12:00:10 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/17 10:36:35 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/23 01:02:51 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,3 @@ char	*ft_itoa(int n)
 	res[len] = 0;
 	return (res);
 }
-/*int main(void)
-{
-	printf("%s\n", ft_itoa(452367850));
-}*/

@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 15:48:15 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/17 11:07:40 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/23 01:05:16 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-/*int main(void)
-{
-	char s1[] = "hello";
-	char s2[] = "lo";
-	printf("%s\n", ft_strnstr(s1, s2, 5));
-}*/

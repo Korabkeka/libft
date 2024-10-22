@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 13:11:02 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/17 11:14:56 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/23 01:05:43 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,3 @@ int	ft_toupper(int c)
 	}
 	return (c);
 }
-/*int main(void)
-{
-	printf("%c\n", ft_toupper('d'));
-}*/

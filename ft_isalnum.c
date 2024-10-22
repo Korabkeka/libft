@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 10:35:33 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/17 10:24:07 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/23 01:02:33 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,3 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
-
-/*int main(void)
-{
-	printf("%d\n", ft_isalnum('"'));
-}*/

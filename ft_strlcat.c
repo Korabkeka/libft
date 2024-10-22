@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 12:22:29 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/18 19:02:23 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/23 01:04:40 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,10 +32,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	}
 	return (dlen + slen);
 }
-/*int main(void)
-{
-	char s1[15] = "hello ";
-	const char s2[] = "world";
-	strlcat(s1, s2, 9);
-	printf("%s\n", s1);
-}*/

@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 11:03:49 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/17 11:05:24 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/23 01:04:52 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,3 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-/*int main(void)
-{
-	char aaa[] = "elloh";
-	printf("%li\n", ft_strlen(aaa));
-}*/

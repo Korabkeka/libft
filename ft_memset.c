@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 11:22:08 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/17 10:44:57 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/23 01:03:34 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,3 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-/*int main(void)
-{
-	char hello[10] = "bon"; 
-	printf("%s\n", (char *)memset(hello, 97, 3));
-}*/

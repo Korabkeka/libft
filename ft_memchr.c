@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 14:21:48 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/17 10:28:25 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/23 01:03:01 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-/*int main(void)
-{
-	char s[] = "hello world";
-	printf("%s\n", ft_memchr(s, 'o', 8));
-}*/

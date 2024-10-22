@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 12:23:03 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/17 10:54:50 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/23 01:04:07 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,3 @@ char	*ft_strdup(const char *s)
 	dup[i] = '\0';
 	return (dup);
 }
-/*int main(void)
-{
-	printf("%i\n", (int)ft_strdup("hello world")[12]);
-}*/

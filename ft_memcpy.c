@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 13:52:26 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/17 11:47:49 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/23 01:03:15 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-/*int main(void)
-{
-	char hello[10] = "bonrobert";
-	char bobo[10] = "lolo";
-	printf("%s\n", (char *)ft_memcpy(hello, bobo, 4));
-}*/

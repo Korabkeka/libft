@@ -6,7 +6,7 @@
 /*   By: kkeka <kkeka@student.42lausanne.ch>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 19:07:54 by kkeka             #+#    #+#             */
-/*   Updated: 2024/10/17 11:06:46 by kkeka            ###   ########.fr       */
+/*   Updated: 2024/10/23 01:05:07 by kkeka            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	res[i] = 0;
 	return (res);
 }
-/*static char    modif(unsigned int i, char c)
-{
-	if(i & 1 && (c >= 'a' && c <= 'z'))
-		return ('a');
-	return ('b');
-}
-
-int main(void)
-{
-	printf("%s\n", ft_strmapi("hello world", modif));
-}*/
