@@ -44,7 +44,33 @@ static void	init_vars(int *i, int *j, int *currentlyinword)
 
 static char	*addword(const char *s, char c, int start_index)
 {
+	char	*res;
+	size_t	i;
 
+	i = 0;
+	while (s[start_index + i] != c && start_index + i < ft_strlen(s))
+		i++;
+	res = malloc((i + 1) * sizeof(char));
+	if (!res)
+		return (NULL);
+	while (s[start_index + i] != c && start_index + i < ft_strlen(s))
+	{
+		res[i] = s[start_index + i];
+		i++;
+	}
+	res[i] = 0;
+	return (res);
+}
+
+static void	*free_all(char **strs, int count)
+{
+	while (count >= 0)
+	{
+		free(strs[count]);
+		count--;
+	}
+	free(strs);
+	return (NULL);
 }
 
 char	**ft_split(char const *s, char c)
@@ -53,9 +79,9 @@ char	**ft_split(char const *s, char c)
 	int		currentlyinword;
 	int		i;
 	int		j;
-
-	res = malloc((countwords(s, c) + 1) * sizeof(char *));
+	
 	init_vars(&i, &j, &currentlyinword);
+	res = malloc((countwords(s, c) + 1) * sizeof(char *));
 	if (!res)
 		return (NULL);
 	while (s[i])
@@ -75,15 +101,15 @@ char	**ft_split(char const *s, char c)
 	res[j] = NULL;
 	return (res);
 }
-
+/*
 #include <stdio.h>
 
 int main(void)
 {
-	/*char    **arr = ft_split("bonjour comment ca va ?", ' ');
+	char    **arr = ft_split("bonjour comment ca va ?", ' ');
 	int i = 0;
 	while(arr[i])
-		printf("%s\n", arr[i++]);*/
-	/*char s[] = "    ";
-	printf("%i\n", countwords(s, ' '));*/
-}
+		printf("%s\n", arr[i++]);
+	char s[] = "    ";
+	printf("%i\n", countwords(s, ' '));
+}*/
